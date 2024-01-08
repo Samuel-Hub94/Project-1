@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Unique ID" action="CountDistinct" rename="Total Number of Respondets" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Final project for alteryx.xlsx
+Query=`Work-file$1:631`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Unique ID" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Date Taken (America/New_York)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Time Taken (America/New_York)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Time Spent" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q1 - Which Title Best Fits your Current Role?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="F6" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="F7" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="Double" />
+            <Field name="Others( Job_Role)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Max Current Yearly Salary (in USD)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Min Current Yearly Salary (in USD)" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="Double" />
+            <Field name="Average Yearly Salary" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q5 - Favorite Programming Language" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Others( Favorite Programming Language )" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_WString" />
+            <Field name="Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q6 - How Happy are you in your Current Position with the following? (Coworkers)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q6 - How Happy are you in your Current Position with the following? (Management)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q6 - How Happy are you in your Current Position with the following? (Learning New Things)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q7 - How difficult was it for you to break into Data?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q8 - If you were to look for a new job today, what would be the most important thing to you?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_WString" />
+            <Field name="Q9 - Male/Female?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Q10 - Current Age" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="Double" />
+            <Field name="Q11 - Which Country do you live in?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+            <Field name="Others(Country)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q10 - Current Age" action="Avg" rename="Avgerage age of repondents" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([Avgerage age of repondents],1)&#xA;" field="Avgerage age of repondents" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Avgerage age of repondents = Round([Avgerage age of repondents],1)
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q1 - Which Title Best Fits your Current Role?" action="GroupBy" rename="Job Role" />
+            <SummarizeField field="Average Yearly Salary" action="Avg" rename="Average Yearly Salary(USD)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Unique ID" selected="True" />
+            <SelectField field="Date Taken (America/New_York)" selected="True" />
+            <SelectField field="Time Taken (America/New_York)" selected="True" />
+            <SelectField field="Time Spent" selected="True" />
+            <SelectField field="Q1 - Which Title Best Fits your Current Role?" selected="True" />
+            <SelectField field="Average Yearly Salary" selected="True" type="Double" size="8" />
+            <SelectField field="Q5 - Favorite Programming Language" selected="True" />
+            <SelectField field="Q6 - How Happy are you in your Current Position with the following? (Salary)" selected="True" type="Double" size="8" />
+            <SelectField field="Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)" selected="True" type="Double" size="8" />
+            <SelectField field="Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)" selected="False" type="Double" size="8" />
+            <SelectField field="Q6 - How Happy are you in your Current Position with the following? (Learning New Things)" selected="False" type="Double" size="8" />
+            <SelectField field="Q7 - How difficult was it for you to break into Data?" selected="True" />
+            <SelectField field="Q9 - Male/Female?" selected="True" />
+            <SelectField field="Q11 - Which Country do you live in?" selected="True" />
+            <SelectField field="Q10 - Current Age" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([Average Yearly Salary(USD)],1)" field="Average Yearly Salary(USD)" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Average Yearly Salary(USD) = Round([Average Yearly Salary(USD)],1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q1 - Which Title Best Fits your Current Role?" action="GroupBy" rename="Job Role" />
+            <SummarizeField field="Q5 - Favorite Programming Language" action="GroupBy" rename="Favorite Programming Language" />
+            <SummarizeField field="Unique ID" action="CountDistinct" rename="Total Respondent" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_3aff8e9e3a6bf24db2d5c57e563202cd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_3f0e72cd89fd6643ab569f43e9a38146~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="570" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Total Respondent" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Respondent - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="558" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Average Yearly Salary(USD)" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Average Yearly Salary(USD) - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q5 - Favorite Programming Language" action="GroupBy" rename="Favorite Programming Language" />
+            <SummarizeField field="Unique ID" action="CountDistinct" rename="Total Respondent" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="570" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Total Respondent" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Respondent - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q11 - Which Country do you live in?" action="GroupBy" rename="Country" />
+            <SummarizeField field="Unique ID" action="CountDistinct" rename="Total Respondents" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_65e930fbdca61840bc41b6d97fb300c7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_715e32c88b8efb479a70fd2f9dc17c34~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="570" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Total Respondents" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Respondents - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_d5db285384fa7e4a992bf4bb23962d82~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="750" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Total Number of Respondets" selected="True" rename="Source_Total Number of Respondets" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q11 - Which Country do you live in?" action="GroupBy" rename="Country" />
+            <SummarizeField field="Q1 - Which Title Best Fits your Current Role?" action="GroupBy" rename="Job Role (unique)" />
+            <SummarizeField field="Unique ID" action="CountDistinct" rename="Total Respondents" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_62f0854ab1808e4db6e16a927d5ddc48~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="690" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Total Respondents" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Respondents - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="570" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>NotContains</Operator>
+            <Field>Job Role (unique)</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-01-01 23:10:04</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>other</Operand>
+              <StartDate>2024-01-01 23:10:04</StartDate>
+              <EndDate>2024-01-01 23:10:04</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([Job Role (unique)],"other")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="474" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)" action="Avg" rename="Happy with Work/Life Balance(%)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([Happy with Work/Life Balance(%)]&#xA;,1.9)" field="Happy with Work/Life Balance(%)" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Happy with Work/Life Balance(%) = Round([Happy with Work/Life Balance(%)]
+,1.9)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="474" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Q6 - How Happy are you in your Current Position with the following? (Salary)" action="Avg" rename="Happy with  Salary(%)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="126" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>Custom</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Unique ID" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="1" />
+                <Field name="Date Taken (America/New_York)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="2" />
+                <Field name="Time Taken (America/New_York)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="3" />
+                <Field name="Time Spent" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="4" />
+                <Field name="Q1 - Which Title Best Fits your Current Role?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="5" />
+                <Field name="F6" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="6" />
+                <Field name="F7" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="Double" column="7" />
+                <Field name="Others( Job_Role)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="8" />
+                <Field name="Max Current Yearly Salary (in USD)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="9" />
+                <Field name="Min Current Yearly Salary (in USD)" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="Double" column="10" />
+                <Field name="Average Yearly Salary" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="11" />
+                <Field name="Q5 - Favorite Programming Language" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="12" />
+                <Field name="Others( Favorite Programming Language )" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_WString" column="13" />
+                <Field name="Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="15" />
+                <Field name="Q6 - How Happy are you in your Current Position with the following? (Coworkers)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="16" />
+                <Field name="Q6 - How Happy are you in your Current Position with the following? (Management)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="17" />
+                <Field name="Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="18" />
+                <Field name="Q6 - How Happy are you in your Current Position with the following? (Learning New Things)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="19" />
+                <Field name="Q7 - How difficult was it for you to break into Data?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="20" />
+                <Field name="Q8 - If you were to look for a new job today, what would be the most important thing to you?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_WString" column="21" />
+                <Field name="Q9 - Male/Female?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="22" />
+                <Field name="Q11 - Which Country do you live in?" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="23" />
+                <Field name="Q10 - Current Age" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="Double" column="24" />
+                <Field name="Others(Country)" size="255" source="File: C:\Users\BiG SaM\Downloads\Final project for alteryx.xlsx|||`Work-file$1:631`" type="V_String" column="25" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Q6 - How Happy are you in your Current Position with the following? (Salary)" size="255" source="File: C:\Users\BiG SaM\Downloads\PowerBI Project 1 (Salary Satisfaction) .xlsx|||`Sheet1$`" type="V_String" column="14" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\BiG SaM\Downloads\PowerBI Project 1 (Salary Satisfaction) .xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PowerBI Project 1 (Salary Satisfaction) .xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Q6 - How Happy are you in your Current Position with the following? (Salary)" size="255" source="File: C:\Users\BiG SaM\Downloads\PowerBI Project 1 (Salary Satisfaction) .xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([Happy with  Salary(%)]&#xA;,.1)" field="Happy with  Salary(%)" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Happy with  Salary(%) = Round([Happy with  Salary(%)]
+,.1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="726" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Total Number of Respondets" selected="True" rename="Source_Total Number of Respondets" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BIGSAM~1\AppData\Local\Temp\Engine_16008_2a9346330ae67b4fabe53eed4944d08d_\Engine_16008_cbbe79ee1764a147bdff3fdb32e29409~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="50" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="50" Connection="Source" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="True" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="64" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="64" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Power BI Project 1 Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="dcffdcec-3484-4a34-b06e-39c94979d0eb" />
+      <Telemetry>
+        <PreviousWorkflowId value="9c8f0c54-8b2d-4f52-ab83-fa6a2e9350ec" />
+        <OriginWorkflowId value="9c8f0c54-8b2d-4f52-ab83-fa6a2e9350ec" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
